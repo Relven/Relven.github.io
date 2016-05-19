@@ -67,14 +67,8 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 
-## baidu analytics
-baidu_analytics: 5bbd26412404683ce820c9bf65201e84
-
-## google analytics
-google_analytics: UA-71080154-1
-
-## Swiftype search engine
-swiftype_key: dy8yyns4r9yK2d_PJbVM
+# Baidu Analytics ID
+baidu_analytics: ddf81d15f3dd2c97fe1367f3c20e790c
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
