@@ -6,6 +6,8 @@
     <i class="icon-next-heart fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">{{ config.author }}</span>
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1259154192'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1259154192' type='text/javascript'%3E%3C/script%3E"));</script>
+{% block footer %}{% endblock %}
 </div>
 
 <div class="powered-by" style="display:none">
@@ -19,5 +21,3 @@
   </a>
 </div>
 
-<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256921957'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1256921957' type='text/javascript'%3E%3C/script%3E"));</script>
-{% block footer %}{% endblock %}

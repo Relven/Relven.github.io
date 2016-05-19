@@ -79,9 +79,9 @@ sidebar: always
 
 # Social links
 social:
-  GitHub: https://github.com/wingjay
-  简书: http://www.jianshu.com/users/da333fd63fe5/latest_articles
-  Weibo: http://weibo.com/u/1625892654
+  GitHub: https://github.com/Relven
+  # 简书: http://www.jianshu.com/users/da333fd63fe5/latest_articles
+  # Weibo: http://weibo.com/u/1625892654
   #Others:
 
 # Social Icons from FontAwsome
@@ -89,8 +89,8 @@ social_icons:
   enable: true
   # Icon Mappings
   GitHub: github
-  Twitter: twitter
-  Weibo: weibo
+  # Twitter: twitter
+  # Weibo: weibo
 
 
 # Sidebar Avatar
@@ -155,13 +155,13 @@ mathjax:
 
 
 # Swiftype Search API Key
-#swiftype_key:
+swiftype_key: dy8yyns4r9yK2d_PJbVM
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: ddf81d15f3dd2c97fe1367f3c20e790c
 
 # Duoshuo ShortName
-#duoshuo_shortname:
+duoshuo_shortname: rongbin
 
 # Disqus
 #disqus_shortname:
@@ -178,8 +178,7 @@ mathjax:
 
 
 # Google Analytics
-#google_analytics:
-
+google_analytics: UA-71080154-1
 
 # Make duoshuo show UA
 # user_id must NOT be null when admin_enable is true!

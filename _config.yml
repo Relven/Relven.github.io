@@ -4,11 +4,13 @@
 
 # Site
 title: Muscle Bin
-subtitle:
-description:
+subtitle: 活着多动动
+description: 凌晨四点，海棠花未开
 author: RongBin
 language: zh-Hans
 timezone:
+keywords: [iOS, github, 技术博客, 移动开发, binrong]
+avatar: http://q2.qlogo.cn/g?b=qq&k=6NK9e1Cvib9z4prblAbls5A&s=100&t=1463060761
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -34,13 +36,13 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace:
 
 # Category & Tag
@@ -64,6 +66,15 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+
+## baidu analytics
+baidu_analytics: 5bbd26412404683ce820c9bf65201e84
+
+## google analytics
+google_analytics: UA-71080154-1
+
+## Swiftype search engine
+swiftype_key: dy8yyns4r9yK2d_PJbVM
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
