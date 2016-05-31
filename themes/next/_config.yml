@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "rongbin,Muscle Bin,RongBin,iOS"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -301,11 +301,11 @@ busuanzi_count:
   # count values only if the other configs are false
   enable: true
   # custom uv span for the whole site
-  site_uv: false
+  site_uv: true
   site_uv_header: <i class="fa fa-user">访客数</i>
   site_uv_footer:
   # custom pv span for the whole site
-  site_pv: true
+  site_pv: false
   site_pv_header: <i class="fa fa-eye">访问量</i>
   site_pv_footer:
   # custom pv span for one page only
