@@ -1,0 +1,760 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="文章集合," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="富文本使用CoreText实现图文混排CoreText实现图文混排之点击事件  
+【数据结构】平衡二叉树—AVL树iOS开发 GET、POST请求方法：NSURLSession篇
+轻松搞定面试中的链表题目 轻松搞定面试中的二叉树题目
+深入理解RunLoopEasyJsWebView 源码分析【数据结构】平衡二叉树—AVL树NirKxMenu  类似QQ自带弹出菜单TKRubberIndicator">
+<meta property="og:type" content="article">
+<meta property="og:title" content="文章链接集">
+<meta property="og:url" content="http://binrong.top/2016/05/30/文章链接集/index.html">
+<meta property="og:site_name" content="Muscle Bin">
+<meta property="og:description" content="富文本使用CoreText实现图文混排CoreText实现图文混排之点击事件  
+【数据结构】平衡二叉树—AVL树iOS开发 GET、POST请求方法：NSURLSession篇
+轻松搞定面试中的链表题目 轻松搞定面试中的二叉树题目
+深入理解RunLoopEasyJsWebView 源码分析【数据结构】平衡二叉树—AVL树NirKxMenu  类似QQ自带弹出菜单TKRubberIndicator">
+<meta property="og:updated_time" content="2016-06-01T05:27:24.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="文章链接集">
+<meta name="twitter:description" content="富文本使用CoreText实现图文混排CoreText实现图文混排之点击事件  
+【数据结构】平衡二叉树—AVL树iOS开发 GET、POST请求方法：NSURLSession篇
+轻松搞定面试中的链表题目 轻松搞定面试中的二叉树题目
+深入理解RunLoopEasyJsWebView 源码分析【数据结构】平衡二叉树—AVL树NirKxMenu  类似QQ自带弹出菜单TKRubberIndicator">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6286199743710234000,
+      author: 'Muscle Bin'
+    }
+  };
+</script>
+
+  <title> 文章链接集 | Muscle Bin </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?ddf81d15f3dd2c97fe1367f3c20e790c";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Muscle Bin</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">活着多动动</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'cuJV5J_ZM7Vye9FcAyxe','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                文章链接集
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-30T23:03:54+08:00" content="2016-05-30">
+              2016-05-30
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/外部/" itemprop="url" rel="index">
+                    <span itemprop="name">外部</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/30/文章链接集/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/30/文章链接集/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+              &nbsp; | &nbsp;
+              <span class="page-pv"><i class="fa fa-file-o">阅读量</i>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+              </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h5 id="富文本使用"><a href="#富文本使用" class="headerlink" title="富文本使用"></a>富文本使用</h5><p><a href="http://www.jianshu.com/p/6db3289fb05d" target="_blank" rel="external">CoreText实现图文混排</a><br><a href="http://www.jianshu.com/p/51c47329203e" target="_blank" rel="external">CoreText实现图文混排之点击事件</a>  </p>
+<p><a href=""></a><br><a href=""></a><br><a href=""></a><br><a href=""></a><br><a href=""></a><br><a href=""></a><br><a href="http://www.kuqin.com/shuoit/20160519/352104.html" target="_blank" rel="external">【数据结构】平衡二叉树—AVL树</a><br><a href="http://ios.jobbole.com/85378/" target="_blank" rel="external">iOS开发 GET、POST请求方法：NSURLSession篇</a></p>
+<p><a href="http://blog.csdn.net/luckyxiaoqiang/article/details/7393134" target="_blank" rel="external">轻松搞定面试中的链表题目</a><br><a href="http://blog.csdn.net/luckyxiaoqiang/article/details/7518888" target="_blank" rel="external"> 轻松搞定面试中的二叉树题目</a></p>
+<p><a href="http://blog.ibireme.com/2015/05/18/runloop/" target="_blank" rel="external">深入理解RunLoop</a><br><a href="http://ios.jobbole.com/85273/" target="_blank" rel="external">EasyJsWebView 源码分析</a><br><a href="http://www.kuqin.com/shuoit/20160519/352104.html" target="_blank" rel="external">【数据结构】平衡二叉树—AVL树</a><br><a href="https://github.com/zpz1237/NirKxMenu" target="_blank" rel="external">NirKxMenu  类似QQ自带弹出菜单</a><br><a href="https://github.com/TBXark/TKRubberIndicator" target="_blank" rel="external">TKRubberIndicator</a>  </p>
+<h5 id="html"><a href="#html" class="headerlink" title="html"></a>html</h5><p><a href="http://www.imooc.com/article/3666" target="_blank" rel="external">HTML 最佳实践</a><br><a href="http://www.imooc.com/article/2235" target="_blank" rel="external">史上最全Html和CSS布局技巧</a><br><a href="http://www.imooc.com/article/2349" target="_blank" rel="external">HTML整站结构设计</a>  </p>
+<h5 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h5><p><a href="http://www.imooc.com/article/3066" target="_blank" rel="external">Python 面向对象（进阶篇）</a><br><a href="http://www.imooc.com/article/2925" target="_blank" rel="external">Python 面向对象（初级篇）</a></p>
+<h5 id="控件"><a href="#控件" class="headerlink" title="控件"></a>控件</h5><p><a href="http://ios.jobbole.com/85350/" target="_blank" rel="external">iOS 自定义 AlertController 分享</a> </p>
+<h5 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h5><p><a href="http://www.kuqin.com/shuoit/20160331/351428.html" target="_blank" rel="external">数据结构中的7种排序算法</a><br><a href="http://ios.jobbole.com/85236/" target="_blank" rel="external">Swift 算法实战之路1</a>  </p>
+<h5 id="内存"><a href="#内存" class="headerlink" title="内存"></a>内存</h5><p><a href="http://www.kuqin.com/shuoit/20160510/351959.html" target="_blank" rel="external">iOS的内存管理</a> </p>
+<h5 id="html-1"><a href="#html-1" class="headerlink" title="html"></a>html</h5><p><a href="http://www.kuqin.com/shuoit/20160510/351970.html" target="_blank" rel="external">HTML标签 与 React组件 对比</a> </p>
+<h5 id="AngularJS"><a href="#AngularJS" class="headerlink" title="AngularJS"></a>AngularJS</h5><p><a href="https://segmentfault.com/a/1190000005110986" target="_blank" rel="external">用Typescript编写AngularJS应用是怎样一种感受</a><br><a href="http://www.imooc.com/article/1505" target="_blank" rel="external">11个很棒的 AngularJS 工具</a><br><a href="https://segmentfault.com/a/1190000005342175" target="_blank" rel="external">Hacking with Angular: 玩转ngOptions指令</a>  </p>
+<h5 id="git"><a href="#git" class="headerlink" title="git"></a>git</h5><p><a href="http://www.worldhello.net/2010/11/30/2166.html" target="_blank" rel="external">git工作区暂存区版本库</a><br><a href="http://gitbook.liuhui998.com/4_9.html" target="_blank" rel="external">Git的撤消操作 - 重置, 签出 和 撤消</a></p>
+<h5 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h5><p><a href="http://www.jianshu.com/p/2b4388cf2a2d" target="_blank" rel="external">移动端数据库新王者：realm</a><br><a href="https://realm.io/cn/news/realm-1.0/" target="_blank" rel="external">realm</a></p>
+<h5 id="正则"><a href="#正则" class="headerlink" title="正则"></a>正则</h5><p><a href="https://github.com/lzwjava/OpenSourceNotes/blob/master/Regex/regex.md" target="_blank" rel="external">复杂正则表达式原来是纸老虎</a>  </p>
+<h5 id="im"><a href="#im" class="headerlink" title="im"></a>im</h5><p><a href="http://ios.jobbole.com/85230/" target="_blank" rel="external">微信,QQ这类IM app怎么做——谈谈Websocket</a>  </p>
+<h5 id="支付"><a href="#支付" class="headerlink" title="支付"></a>支付</h5><p><a href="http://ios.jobbole.com/85228/" target="_blank" rel="external">10分钟搞定支付宝和微信支付 的 各种填坑</a><br><a href="http://www.jianshu.com/p/97d38b00e53d" target="_blank" rel="external">iOS支付[支付宝、银联、微信]</a></p>
+<h5 id="安全"><a href="#安全" class="headerlink" title="安全"></a>安全</h5><p><a href="http://mrpeak.cn/blog/encrypt/" target="_blank" rel="external">App安全之网络传输安全</a></p>
+<h5 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h5><p><a href="http://www.imooc.com/article/2949" target="_blank" rel="external">10个常见的Node.js面试题</a><br><a href="http://www.kuqin.com/shuoit/20160505/351891.html" target="_blank" rel="external">精通Node.js： 你应该阅读的书籍</a>  </p>
+<h5 id="接入功能"><a href="#接入功能" class="headerlink" title="接入功能"></a>接入功能</h5><p><a href="http://blog.treney.com/index.php/archives/DidiSDK.html?hmsr=toutiao.io&amp;utm_medium=toutiao.io&amp;utm_source=toutiao.io" target="_blank" rel="external">iOS 开发之如何在项目中接入滴滴打车功能？</a> </p>
+<h5 id="不知道怎么分类"><a href="#不知道怎么分类" class="headerlink" title="不知道怎么分类"></a>不知道怎么分类</h5><p><a href="http://www.jianshu.com/p/bcf3d692f99d?hmsr=toutiao.io&amp;utm_medium=toutiao.io&amp;utm_source=toutiao.io" target="_blank" rel="external">iOS 实现NavigationController的titleView动态缩放效果</a><br><a href="http://www.jianshu.com/p/41f654654226" target="_blank" rel="external">QQ消除小红点（一键退朝）动画。</a><br><a href="http://www.jianshu.com/p/44c1405d09e3" target="_blank" rel="external">ListView结合CheckBox实现单选操作</a><br><a href="http://ios.jobbole.com/85215/" target="_blank" rel="external">iOS图片动态缓存方案</a><br><a href="http://ios.jobbole.com/85220/" target="_blank" rel="external">一行代码实现iOS序列化与反序列化</a><br><a href="http://www.jianshu.com/p/27cd7ecf3250" target="_blank" rel="external">RxJava + Retrofit 的实际应用场景</a><br><a href="http://iosre.com/t/macho/3786/1" target="_blank" rel="external">MachO文件的符号混淆</a><br><a href="http://ios.jobbole.com/85249/" target="_blank" rel="external">Objective-C 2.0 运行时系统编程</a><br><a href="http://ios.jobbole.com/85009/" target="_blank" rel="external">GCD、dispatch 函数介绍</a><br><a href="http://ios.jobbole.com/85278/" target="_blank" rel="external">YYModel 源码历险记：代码结构</a><br><a href="http://www.jianshu.com/p/3beb21d5def2" target="_blank" rel="external">iOS MVVM+RAC 从框架到实战</a><br><a href="http://www.jianshu.com/p/eb6bd4b0f9a5" target="_blank" rel="external">Quartz2D 编程指南（一）概览、图形上下文、路径、颜色与颜色空间</a><br><a href="http://ios.jobbole.com/85109/" target="_blank" rel="external">iOS 动画入门到精通（1.3）：缩放</a><br><a href="http://ios.jobbole.com/85092/" target="_blank" rel="external">Runtime全方位装逼指南</a><br><a href="http://ios.jobbole.com/85100/" target="_blank" rel="external">解决点击状态栏时ScrollView自动滚动到初始位置失效办法</a><br><a href="https://github.com/aui/font-spider/issues/79" target="_blank" rel="external">WebFont 智能压缩工具——字蛛 1.0.0 正式版发布-新增图标字体压缩 #79</a><br><a href="http://ios.jobbole.com/84997/" target="_blank" rel="external">实现collectionViewCell的移动(长按或者直接拖拽)</a><br><a href="http://ios.jobbole.com/85172/" target="_blank" rel="external">iOS中__block 关键字的底层实现原理</a><br><a href="http://ios.jobbole.com/85303/" target="_blank" rel="external">iOS Core Data 数据迁移 指南</a><br><a href="http://ios.jobbole.com/84890/" target="_blank" rel="external">iOS开发经验总结</a><br><a href="http://insights.thoughtworkers.org/reactjs/" target="_blank" rel="external">秒懂REACTJS</a><br><a href="http://www.jianshu.com/p/5804fa72aaed" target="_blank" rel="external">iOS UIScrollView 你可能不知道的奇技淫巧</a><br><a href="http://www.imooc.com/article/4447" target="_blank" rel="external">一个绚丽的loading动效分析与实现</a><br><a href="https://segmentfault.com/a/1190000004328931" target="_blank" rel="external">一步步创建自己的iOS框架</a><br><a href="http://awhisper.github.io/2016/05/11/iOSBrowserDomainBridge/" target="_blank" rel="external">iOS app与浏览器 跨域互通</a><br><a href="https://github.com/ChenYilong/CYLTabBarController" target="_blank" rel="external">CYLTabBarController【低耦合集成TabBarController】</a><br><a href="http://drops.wooyun.org/papers/12355" target="_blank" rel="external">iOS冰与火之歌 – Objective-C Pwn and iOS arm64 ROP</a><br><a href="http://www.imooc.com/article/1345" target="_blank" rel="external">Git 使用规范流程</a><br><a href="http://www.imooc.com/article/1361" target="_blank" rel="external">不一样的命令行工具 mycli</a><br><a href="http://ios.jobbole.com/85200/" target="_blank" rel="external">iOS推送——本地推送与远程推送详解（一图看懂）</a><br><a href="https://github.com/phodal/growth-in-action" target="_blank" rel="external">全栈增长工程师实战</a><br><a href="http://ios.jobbole.com/85193/" target="_blank" rel="external">HTTP in iOS你看我就够</a><br><a href="https://www.gaoyuexiang.cn/archives/361" target="_blank" rel="external">从HTTP到HTTPS</a><br><a href="http://www.uisdc.com/10-useful-short-javascript-code" target="_blank" rel="external">前端福利！10个短小却超实用的JAVASCRIPT 代码段</a><br><a href="http://wereadteam.github.io/2016/05/23/GYBootingProtection/" target="_blank" rel="external">iOS 启动连续闪退保护方案</a><br><a href="http://www.jianshu.com/p/ba1f79f8f6fa" target="_blank" rel="external">在直播应用中添加Faceu效果</a><br><a href="http://ios.jobbole.com/84823/" target="_blank" rel="external">动态添加子视图 UIView 的正确方法</a><br><a href="http://blog.jobbole.com/101221/" target="_blank" rel="external">从0到1搭建移动App功能自动化测试平台（0）：背景介绍和平台规划</a>  </p>
+<h3 id="书单三方库"><a href="#书单三方库" class="headerlink" title="书单三方库"></a>书单三方库</h3><p><a href="http://www.devstore.cn/essay/essayInfo/6485.html" target="_blank" rel="external">GitHub 排名前 100 的安卓、iOS项目简介</a><br><a href="http://ios.jobbole.com/84894/" target="_blank" rel="external">移动开发必读书单</a> </p>
+<h3 id="技术博客"><a href="#技术博客" class="headerlink" title="技术博客"></a>技术博客</h3><p><a href="http://mrpeak.cn/" target="_blank" rel="external">MrPeak技术分享</a>  一个iOS和安卓的技术博<br><a href="http://toutiao.io/u/125107" target="_blank" rel="external">坐蜗牛狂奔</a>  iOS<br><a href="http://www.jobbole.com/members/ahalei/" target="_blank" rel="external">啊哈磊－坐在马桶上看算法系列</a>  算法<br><a href="http://www.jianshu.com/users/a56ec10f6603/latest_articles" target="_blank" rel="external">老司机Wicky</a> iOS<br><a href="http://blog.treney.com/" target="_blank" rel="external">鹏威の博客</a>   iOS<br><a href="http://toutiao.io/subjects/117027" target="_blank" rel="external">美团点评技术团队技术博客</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/文章集合/" rel="tag">#文章集合</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/26/长干行－李白/" rel="next" title="长干行－李白">
+                <i class="fa fa-chevron-left"></i> 长干行－李白
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/05/30/文章链接集/"
+           data-title="文章链接集" data-url="http://binrong.top/2016/05/30/文章链接集/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://q2.qlogo.cn/g?b=qq&k=6NK9e1Cvib9z4prblAbls5A&s=100&t=1463060761"
+               alt="RongBin" />
+          <p class="site-author-name" itemprop="name">RongBin</p>
+          <p class="site-description motion-element" itemprop="description">种一棵树最好的时间是十年前，其次就是现在</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/Relven" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              友链
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://wangyingbo.top" title="帅胖" target="_blank">帅胖</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#富文本使用"><span class="nav-number">1.</span> <span class="nav-text">富文本使用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#html"><span class="nav-number">2.</span> <span class="nav-text">html</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Python"><span class="nav-number">3.</span> <span class="nav-text">Python</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#控件"><span class="nav-number">4.</span> <span class="nav-text">控件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#算法"><span class="nav-number">5.</span> <span class="nav-text">算法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#内存"><span class="nav-number">6.</span> <span class="nav-text">内存</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#html-1"><span class="nav-number">7.</span> <span class="nav-text">html</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#AngularJS"><span class="nav-number">8.</span> <span class="nav-text">AngularJS</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#git"><span class="nav-number">9.</span> <span class="nav-text">git</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#数据库"><span class="nav-number">10.</span> <span class="nav-text">数据库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#正则"><span class="nav-number">11.</span> <span class="nav-text">正则</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#im"><span class="nav-number">12.</span> <span class="nav-text">im</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#支付"><span class="nav-number">13.</span> <span class="nav-text">支付</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#安全"><span class="nav-number">14.</span> <span class="nav-text">安全</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Node-js"><span class="nav-number">15.</span> <span class="nav-text">Node.js</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#接入功能"><span class="nav-number">16.</span> <span class="nav-text">接入功能</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#不知道怎么分类"><span class="nav-number">17.</span> <span class="nav-text">不知道怎么分类</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#书单三方库"><span class="nav-number"></span> <span class="nav-text">书单三方库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#技术博客"><span class="nav-number"></span> <span class="nav-text">技术博客</span></a></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">RongBin</span>
+  
+
+  <div style="display: inline;">
+    <script src="http://s6.cnzz.com/stat.php?id=1259154192&web_id=1259154192" type="text/javascript"></script>
+  </div>
+
+
+
+  
+</div>
+
+
+
+<div class="powered-by" style="display:none">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info" style="display:none">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user">访客数</i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"rongbin"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+
+
+  
+  
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+
+  
+
+</body>
+</html>
